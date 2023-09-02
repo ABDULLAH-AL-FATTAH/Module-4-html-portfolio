@@ -8,12 +8,12 @@
 </head>
 <body>
     <header>
-        <!--Navigation bar always  put in the header section-->
+                <!--Navigation bar always  put in the header section-->
         <nav>
             <ul>
-                <li><a href="home.html"></a>Home</li>
-                <li><a href="blogs.html"></a>Blogs</li>
-                <li><a href="About.html"></a>About</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">About</a></li>
             </ul>
         </nav>
     </header>
@@ -24,7 +24,7 @@
         <iframe width="500" height="300" src="https://www.youtube.com/embed/HVjjoMvutj4?si=F8riFvGHpg4h4FMk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br><br><br>
         <article>
             <header>
-                    <h2>My Conputer Science & Engineering Achievement</h2>
+                    <h2>My Computer Science & Engineering Achievement</h2>
                     <p>Passed Year: <time datetime="2021-10-21">Oct 21, 2021</time></p>
             </header>
             <figure><img src="images/BSc In CSE Provisional.jpg" width="600px" height="350px" alt=""><figcaption>Computer Science Certificate</figcaption></figure>
@@ -34,6 +34,11 @@
             <section><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptas pariatur id eligendi quisquam nobis distinctio accusamus omnis a in commodi, necessitatibus magnam quas maxime unde mollitia minima et delectus.</p></section>
         
             <section><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptas pariatur id eligendi quisquam nobis distinctio accusamus omnis a in commodi, necessitatibus magnam quas maxime unde mollitia minima et delectus.</p></section>
+            <footer>
+                <p>Tags: <a href="fattah">fattah</a>
+                         <a href="email">email</a>
+                </p>
+            </footer>
     </article>
     
     <section>
@@ -48,9 +53,98 @@
             <label for="phone">Your phone:
                 <input id="phone" type="text" placeholder="Your Phone">
             </label>
+
+            <fieldset>
+                <legend>Which communication media do you like?</legend>
+                <label for="phone">
+                    <input type="radio" name="media" id="phone">Phone</label>
+                <label for="email">
+                    <input type="radio" name="media" id="email">Email</label>
+                <label for="facebook">
+                    <input type="radio" name="media" id="facebook">Facebook</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>What type of Education do you like?</legend>
+                <label for="Science">
+                    <input type="checkbox" name="Education" id="Science">Science
+                </label>
+                <label for="Business">
+                    <input type="checkbox" name="Education" id="Business">Business
+                </label>
+                <label for="Humanities"><input type="checkbox" name="Education" id="Humanities">Humanities
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Special Instructions</legend>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </fieldset>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
         </form>
     </section>
 
+    <br><br><br>
+    <h2>Introduction to HTML Table</h2>
+    <h4>A table should have the following elements</h4>
+    <ol>
+        <li>Table: table</li>
+        <li>Table: caption</li>
+        <li>Table: head</li>
+        <li>Table: body</li>
+        <li>Table: raw</li>
+        <li>Table: data/cell</li>
+        <li>Table: footer</li>
+    </ol>
+    <br>
+    <h4>For example:</h4>
+    <table>
+        <caption><b>Employee Salary Table</b></caption>
+        <thead>
+            <tr>
+                <th>SL</th>
+                <th>Full Name</th>
+                <th>Position</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+
+            <tbody>
+                
+                <tr>
+                    <td>1</td>
+                    <td>Bill Gates</td>
+                    <td>Founder Microsoft</td>
+                    <td>&$1000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Steve Jobs</td>
+                    <td>Apple</td>
+                    <td>1100</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Larry Page</td>
+                    <td>Google</td>
+                    <td>1200</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Mark Zuckerberg</td>
+                    <td>Facebook</td>
+                    <td>1300</td>
+                </tr>
+            </tbody>
+
+        <tfoot>
+                <tr>
+                    <td colspan="4"><b>Total Employee:4</b></td>
+                </tr>
+        </tfoot>
+
+    </table>
 
     </main>
     <footer>
