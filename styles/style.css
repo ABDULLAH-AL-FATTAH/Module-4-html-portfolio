@@ -1,31 +1,60 @@
-nav>ul>li{
-    display: inline;
-    margin-right: 15px;
+nav>ul {    /*Immediate Child নির্দেশ করতে এখানে 'nav>ul' আকারে লিখা হয়েছে। */
+    display: flex;
+    /* flex মানে ul এর সব কিছু এক লাইনের মধ্যে নিয়ে আসার জন্য */
+    
+    
+}
+
+nav li {
+    list-style: none;
+    /*list এর মধ্যে ফটা ফটা দাগ গুলো বাদ দেওয়ার জন্য*/
+    margin-right: 10px;
+    /*list এর মধ্যে প্রতিটি item 10 px করে সরে যাবে*/
+    padding: 5px;
+    /*list এর মধ্যে প্রতিটি item উপরে নিচে 5 px করে ফাকা রাখবে */
+}
+nav li:hover{
+    background-color: cadetblue;/*Navigation bar এর list এর মধ্যে প্রতিটি item এ     
+                                   Mouse নিলে এই color টি দেখাবে  */
+nav li a {
+    
+    text-decoration: none;/*Navigation bar এর list এর মধ্যে প্রতিটি item এর নিচে 
+                           Underline বাদ দেওয়ার জন্য None দেওয়া হয়েছে  */
+    color: black; /* link এ ক্লিক করার পর browser যেনো link কে কালো দেখায়। */
+}
+nav li .dropdown{
+    display: none; /*Nav bar এর মধ্যে dropdown আছে তা যেনো show না করে
+                     তাই Display none ব্যবহিত হয়েছে।  */
+    position: absolute;/* বরাবর নিচে নিচে মেনু গুলো থাকবে */
+    
+}
+nav li:hover .dropdown{
+    display: block; /*Nav এর মধ্যে যে li টা আছে তা যেনো mouse নিলে 
+                        ঐ DropDwon টা দেখায় */
+}
 
 }
-nav li>a{
-    /*underline cancel*/
-    text-decoration: none;
-}
-footer{
+footer {
     margin-top: 30px;
     text-align: center;
 }
-label{
+
+label {
     display: block;
     margin-bottom: 10px;
 }
 
-table{
+table {
     border-collapse: collapse;
 }
 
-td{
+td {
     border: 1px solid black;
     text-align: center;
     padding: 5px 10px;
 }
-th{
+
+th {
     border: 1px solid black;
     text-align: center;
     padding: 5px;

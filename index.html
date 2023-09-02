@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Module-4-html-portfolio</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
     <header>
-                <!--Navigation bar always  put in the header section-->
+        <!--Navigation bar always  put in the header section-->
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Blogs</a></li>
-                <li><a href="#">About</a></li>
+
+                <!--শর্টকাট ঃ একাধিক লিস্টের সাথে যদি অ্যাংকর ট্যাগ লাগে তাহলে নিচের মত করতে হবে 'li*4>a' দিয়ে এন্টার দিবো । -->
+
+                <!--শর্টকাট ঃ Tab দিয়ে একটি Tag ভিবিন্ন অংশে জাম্প করা যায় । -->
+
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="audio_video.html">HTML MEDIA</a></li>
+                <li><a href="table.html">HTML TABLE</a></li>
+                <li><a href="form.html">HTML FORM</a></li>
+                <li><a href="article.html">HML ARTICLE</a></li>
+                <li><a href="NavBar.html">HTML NavBar</a></li>
+                <li><a href="nestedDropDown.html">Nested DropDown Mouseover</a></li>
             </ul>
         </nav>
     </header>
@@ -21,97 +32,114 @@
         <h2>Audio & Video</h2>
         <audio controls src="media/Green Day - Amy.mp3"></audio><br><br><br>
         <video controls width="300px" src="media/lesson1.mp4"></video><br><br><br>
-        <iframe width="500" height="300" src="https://www.youtube.com/embed/HVjjoMvutj4?si=F8riFvGHpg4h4FMk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br><br><br>
+        <iframe width="500" height="300" src="https://www.youtube.com/embed/HVjjoMvutj4?si=F8riFvGHpg4h4FMk"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe><br><br><br>
         <article>
             <header>
-                    <h2>My Computer Science & Engineering Achievement</h2>
-                    <p>Passed Year: <time datetime="2021-10-21">Oct 21, 2021</time></p>
+                <h2>My Computer Science & Engineering Achievement</h2>
+                <p>Passed Year: <time datetime="2021-10-21">Oct 21, 2021</time></p>
             </header>
-            <figure><img src="images/BSc In CSE Provisional.jpg" width="600px" height="350px" alt=""><figcaption>Computer Science Certificate</figcaption></figure>
+            <figure><img src="images/BSc In CSE Provisional.jpg" width="600px" height="350px" alt="">
+                <figcaption>Computer Science Certificate</figcaption>
+            </figure>
 
-            <section><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores aliquid dolor omnis repellat quidem reiciendis corrupti voluptate veritatis nobis! Animi, quasi nulla. Ab nisi cumque cum rerum incidunt eaque obcaecati.</p></section>
+            <section>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores aliquid dolor omnis repellat quidem
+                    reiciendis corrupti voluptate veritatis nobis! Animi, quasi nulla. Ab nisi cumque cum rerum incidunt
+                    eaque obcaecati.</p>
+            </section>
 
-            <section><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptas pariatur id eligendi quisquam nobis distinctio accusamus omnis a in commodi, necessitatibus magnam quas maxime unde mollitia minima et delectus.</p></section>
-        
-            <section><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptas pariatur id eligendi quisquam nobis distinctio accusamus omnis a in commodi, necessitatibus magnam quas maxime unde mollitia minima et delectus.</p></section>
+            <section>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptas pariatur id eligendi
+                    quisquam nobis distinctio accusamus omnis a in commodi, necessitatibus magnam quas maxime unde
+                    mollitia minima et delectus.</p>
+            </section>
+
+            <section>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptas pariatur id eligendi
+                    quisquam nobis distinctio accusamus omnis a in commodi, necessitatibus magnam quas maxime unde
+                    mollitia minima et delectus.</p>
+            </section>
             <footer>
                 <p>Tags: <a href="fattah">fattah</a>
-                         <a href="email">email</a>
+                    <a href="email">email</a>
                 </p>
             </footer>
-    </article>
-    
-    <section>
-        <h2>Please Fill up the form </h2>
-        <form>
-            <label for="name">Your Name:
-                <input id="name" type="text" placeholder="Your Name">
-            </label>
-            <label for="email">Your Email:
-                <input id="email" type="text" placeholder="Your Email">
-            </label>
-            <label for="phone">Your phone:
-                <input id="phone" type="text" placeholder="Your Phone">
-            </label>
+        </article>
 
-            <fieldset>
-                <legend>Which communication media do you like?</legend>
-                <label for="phone">
-                    <input type="radio" name="media" id="phone">Phone</label>
-                <label for="email">
-                    <input type="radio" name="media" id="email">Email</label>
-                <label for="facebook">
-                    <input type="radio" name="media" id="facebook">Facebook</label>
-            </fieldset>
-
-            <fieldset>
-                <legend>What type of Education do you like?</legend>
-                <label for="Science">
-                    <input type="checkbox" name="Education" id="Science">Science
+        <section>
+            <h2>Please Fill up the form </h2>
+            <form>
+                <label for="name">Your Name:
+                    <input id="name" type="text" placeholder="Your Name">
                 </label>
-                <label for="Business">
-                    <input type="checkbox" name="Education" id="Business">Business
+                <label for="email">Your Email:
+                    <input id="email" type="text" placeholder="Your Email">
                 </label>
-                <label for="Humanities"><input type="checkbox" name="Education" id="Humanities">Humanities
+                <label for="phone">Your phone:
+                    <input id="phone" type="text" placeholder="Your Phone">
                 </label>
-            </fieldset>
 
-            <fieldset>
-                <legend>Special Instructions</legend>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-            </fieldset>
-            <input type="reset" value="Reset">
-            <input type="submit" value="Submit">
-        </form>
-    </section>
+                <fieldset>
+                    <legend>Which communication media do you like?</legend>
+                    <label for="phone">
+                        <input type="radio" name="media" id="phone">Phone</label>
+                    <label for="email">
+                        <input type="radio" name="media" id="email">Email</label>
+                    <label for="facebook">
+                        <input type="radio" name="media" id="facebook">Facebook</label>
+                </fieldset>
 
-    <br><br><br>
-    <h2>Introduction to HTML Table</h2>
-    <h4>A table should have the following elements</h4>
-    <ol>
-        <li>Table: table</li>
-        <li>Table: caption</li>
-        <li>Table: head</li>
-        <li>Table: body</li>
-        <li>Table: raw</li>
-        <li>Table: data/cell</li>
-        <li>Table: footer</li>
-    </ol>
-    <br>
-    <h4>For example:</h4>
-    <table>
-        <caption><b>Employee Salary Table</b></caption>
-        <thead>
-            <tr>
-                <th>SL</th>
-                <th>Full Name</th>
-                <th>Position</th>
-                <th>Salary</th>
-            </tr>
-        </thead>
+                <fieldset>
+                    <legend>What type of Education do you like?</legend>
+                    <label for="Science">
+                        <input type="checkbox" name="Education" id="Science">Science
+                    </label>
+                    <label for="Business">
+                        <input type="checkbox" name="Education" id="Business">Business
+                    </label>
+                    <label for="Humanities"><input type="checkbox" name="Education" id="Humanities">Humanities
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Special Instructions</legend>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </fieldset>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <br><br><br>
+        <h2>Introduction to HTML Table</h2>
+        <h4>A table should have the following elements</h4>
+        <ol>
+            <li>Table: table</li>
+            <li>Table: caption</li>
+            <li>Table: head</li>
+            <li>Table: body</li>
+            <li>Table: raw</li>
+            <li>Table: data/cell</li>
+            <li>Table: footer</li>
+        </ol>
+        <br>
+        <h4>For example:</h4>
+        <table>
+            <caption><b>Employee Salary Table</b></caption>
+            <thead>
+                <tr>
+                    <th>SL</th>
+                    <th>Full Name</th>
+                    <th>Position</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
 
             <tbody>
-                
+
                 <tr>
                     <td>1</td>
                     <td>Bill Gates</td>
@@ -138,18 +166,23 @@
                 </tr>
             </tbody>
 
-        <tfoot>
+            <tfoot>
                 <tr>
                     <td colspan="4"><b>Total Employee:4</b></td>
                 </tr>
-        </tfoot>
+            </tfoot>
 
-    </table>
+        </table>
 
     </main>
+
+
+
     <footer>
-            <p><small>&copy; 2029. All Rights Reserved</small></p>
+        <p><small>&copy; 2029. All Rights Reserved</small></p>
     </footer>
 
+    <!--শর্টকাটঃ টেক্সগুলোকে সুন্দর ফরম্যাট করতে 'Alt + shift + f' দিতে হবে। -->
 </body>
+
 </html>

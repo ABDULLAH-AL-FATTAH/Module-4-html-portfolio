@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table </title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <!--Navigation bar always  put in the header section-->
+        <nav>
+            <ul>
+
+                <!--শর্টকাট ঃ একাধিক লিস্টের সাথে যদি অ্যাংকর ট্যাগ লাগে তাহলে নিচের মত করতে হবে 'li*4>a' দিয়ে এন্টার দিবো । -->
+
+                <!--শর্টকাট ঃ Tab দিয়ে একটি Tag ভিবিন্ন অংশে জাম্প করা যায় । -->
+
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="audio_video.html">HTML MEDIA</a></li>
+                <li><a href="table.html">HTML TABLE</a></li>
+                <li><a href="form.html">HTML FORM</a></li>
+                <li><a href="article.html">HML ARTICLE</a></li>
+                <li><a href="NabBar.html">HTML NabBar</a></li>
+                <li><a href="nestedDropDown.html">Nested DropDown Mouseover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <br><br><br>
+        <h2>Introduction to HTML Table</h2>
+        <h4>A table should have the following elements</h4>
+        <ol>
+            <li>Table: table</li>
+            <li>Table: caption</li>
+            <li>Table: head</li>
+            <li>Table: body</li>
+            <li>Table: raw</li>
+            <li>Table: data/cell</li>
+            <li>Table: footer</li>
+        </ol>
+        <br>
+        <h4>For example:</h4>
+        <table>
+            <caption><b>Employee Salary Table</b></caption>
+            <thead>
+                <tr>
+                    <th>SL</th>
+                    <th>Full Name</th>
+                    <th>Position</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>1</td>
+                    <td>Bill Gates</td>
+                    <td>Founder Microsoft</td>
+                    <td>&$1000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Steve Jobs</td>
+                    <td>Apple</td>
+                    <td>1100</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Larry Page</td>
+                    <td>Google</td>
+                    <td>1200</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Mark Zuckerberg</td>
+                    <td>Facebook</td>
+                    <td>1300</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="4"><b>Total Employee:4</b></td>
+                </tr>
+            </tfoot>
+
+        </table>
+</body>
+</html>
+
+
+
